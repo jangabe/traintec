@@ -3,13 +3,14 @@ import { BaseNavigationContainer } from '@react-navigation/core';
 import { stackNavigatorFactory } from "react-nativescript-navigation";
 import { HomeScreen } from "./HomeScreen";
 import { SecondaryScreen } from "./SecondaryScreen";
+import  LoginScreen from "./LoginScreen";
 
 const StackNavigator = stackNavigatorFactory();
 
 export const mainStackNavigator = () => (
     <BaseNavigationContainer>
         <StackNavigator.Navigator
-            initialRouteName="Home"
+            initialRouteName="LoginScreen"
             screenOptions={{
                 headerStyle: {
                     backgroundColor: "white",
@@ -24,6 +25,11 @@ export const mainStackNavigator = () => (
             <StackNavigator.Screen
                 name="Secondary"
                 component={SecondaryScreen}
+            />
+
+            <StackNavigator.Screen
+                name="LoginScreen"
+                component={LoginScreen}
             />
         </StackNavigator.Navigator>
     </BaseNavigationContainer>

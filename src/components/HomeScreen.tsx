@@ -5,6 +5,7 @@ import { FrameNavigationProp } from "react-nativescript-navigation";
 import { StyleSheet } from "react-nativescript";
 import { MainStackParamList } from "./NavigationParamList";
 
+
 type HomeScreenProps = {
     route: RouteProp<MainStackParamList, "Home">,
     navigation: FrameNavigationProp<MainStackParamList, "Home">,
@@ -17,7 +18,7 @@ export function HomeScreen({ navigation }: HomeScreenProps) {
                 className="fas"
                 style={styles.text}
             >
-                &#xf135; Hello World!
+                &#xf135; ACT!
             </label>
             <button
                 style={styles.button}
